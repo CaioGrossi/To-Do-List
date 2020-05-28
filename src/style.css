@@ -35,8 +35,9 @@ form {
 }
 
 #container {
-   display: flex;
-   justify-content: space-around;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-column-gap: 30px;
 }
 
 #projetos, #tarefas {
@@ -44,14 +45,6 @@ form {
     padding-left: 20px;
     background-color: rgb(245, 207, 207);
     border-radius: 20px;
-}
-
-#projetos {
-    width: 25vw;
-}
-
-#tarefas {
-    width: 65vw;
 }
 
 input[type = checkbox] {
