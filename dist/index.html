@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <h1>To Do List</h1>
+    <div id="container">
+
+        <div id="projetos">
+           <div class="cabeçalho">
+               <h2>Projects</h2>
+               <button id="addProjeto">+</button>
+           </div>
+        </div>
+
+        <div id="tarefas">
+            <div class="cabeçalho">
+                <h2>Tasks</h2>
+                <button id="addTarefa">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="projetosForm">
+        <form action="">
+            <label for="nome">Name</label>
+            <input id="nomeProjeto" type="text">
+
+            <button id="submeterProjeto">Submmit</button>
+            <button id="cancelarProjeto">Cancel</button>
+        </form>
+
+    </div>
+
+    <div id="tarefasForm">
+        <form action="">
+            <label for="nome">Name</label>
+            <input id="nomeTarefa" type="text">
+            <label for="dia">Day</label>
+            <input id="diaTarefa" type="date">
+            <label for="prioridade">Priority</label>
+            <select name="priority" id="prioridadeTarefa">
+                <option value="alta">High</option>
+                <option value="baixa">Low</option>
+            </select>
+
+            <button id="submeterTarefa">Submmit</button>
+            <button id="cancelarTarefa">Cancel</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
